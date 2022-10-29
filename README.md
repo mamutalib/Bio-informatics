@@ -25,7 +25,7 @@
     <a href="https://github.com/mamutalib/Bio-informatics"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://mamutalib.github.com/Bio-informatics">View Demo</a>
+    <a href="https://mamutalib.github.io/Bio-informatics">View Demo</a>
     ·
     <a href="https://github.com/mamutalib/Bio-informatics/issues">Report Bug</a>
     ·
@@ -124,6 +124,9 @@ int main(void) {
 // Sample input: ACGTATTC
 //        Ouput: A: 2 C: 2 G: 1 T: 3
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### DNA complementary
 ```java
 #include <bits/stdc++.h>
@@ -164,6 +167,8 @@ ACGTATTC
 TGCATAAG
 */
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### RNA Complementary 
 ```c++
 #include <bits/stdc++.h>
@@ -202,6 +207,8 @@ Sample input:AACGUAGGCUC
     output  :UUGCAUCCGAG
 */
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### DNA Reversal 
 
 ```php
@@ -242,6 +249,8 @@ Sample input  : AACGTAGGCTC
 */
 
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### DNA Transcription
 ```c
 #include <bits/stdc++.h>
@@ -270,9 +279,8 @@ int main() {
 Sample input: AACGTAGGCTC
     output  : AACGUAGGCUC
 */
-
-
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Smith WaterMan Algorithm
 ```py
@@ -332,6 +340,7 @@ int main() {
 }
 
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Needleman Algorithm
 
@@ -411,6 +420,8 @@ int main() {
 }
 
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Edit Distance
 ```c
 #include <bits/stdc++.h>
