@@ -1,23 +1,6 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -30,23 +13,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/mamutalib/Bio-informatics">
+    <img src="images/Bioinformatics.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Bio-informatics</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Bio-informatics for NEUB students
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/mamutalib/Bio-informatics"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://mamutalib.github.com/Bio-informatics">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/mamutalib/Bio-informatics/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/mamutalib/Bio-informatics/issues">Request Feature</a>
   </p>
 </div>
 
@@ -85,36 +68,406 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+## Tutorial Question
+#### Set-A
+> <img src="images/TT1-Set-A.jpg" alt="SET-A" title="Bioinformatics Tutorial-1 set A" />
+Question 1 ans: 
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+    a)False
+    b)True
+    c)True
+    d)True
+    e)false
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+ <br>
 
-Use the `BLANK_README.md` to get started.
+#### Set-B
+> <img src="images/TT1-SET-B.jpg" alt="Set-B" title="Bioinformatics Tutorial-1 set-B" />
+Question 1 ans
+
+    a)True
+    b)true
+    c)false
+    d)True
+    e)false
+
+## Bio Informatics Lab
+- [DNA Counting](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-counting)
+- [DNA Complementary](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-complementary)
+- [RNA Complementary](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#rna-complementary)
+- [DNA Reversal](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-reversal)
+- [DNA Transcription](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-transcription)
+- [Smith Waterman Algorithm](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-transcription)
+- [Needleman Algorithm](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#needleman-algorithm)
+- [Edit Distance](https://mamutalib.github.io/neub/9thSemester-Dual/Bio-informatics/Lecture/#edit-distance)
+
+### DNA Counting
+```py
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(void) {
+    string str;
+    cin >> str;
+
+    int len = str.size();
+    int a = 0, c = 0, g = 0, t = 0;
+    for(int i = 0; i<len; i++) {
+        if(str[i] == 'A') a++;
+        else if (str[i] == 'C') c++;
+        else if (str[i] == 'G') g++;
+        else if (str[i] == 'T') t++;
+    }
+    cout << "A: " << a << " C: " << c << " G: " << g << " T: " << t << endl;
+    return 0;
+}
+// Sample input: ACGTATTC
+//        Ouput: A: 2 C: 2 G: 1 T: 3
+```
+### DNA complementary
+```java
+#include <bits/stdc++.h>
+using namespace std;
+
+void dnaComplementary(string str) {
+    int len = str.length();
+    for (int i = 0; i<len; i++) {
+        if(str[i] == 'A'){
+            str[i] = 'T';
+        }
+        else if(str[i] == 'T'){
+            str[i] = 'A';
+        }
+        else if(str[i] == 'C'){
+            str[i] = 'G';
+        }
+        else if(str[i] == 'G'){
+            str[i] = 'C';
+        }
+    }
+    for(int i =0; i<len; i++) {
+        cout << str[i];
+    }
+}
+
+int main() {
+    string str;
+    cin >> str;
+    dnaComplementary(str);
+
+}
+
+
+/*
+Sample input-output:
+ACGTATTC
+TGCATAAG
+*/
+```
+### RNA Complementary 
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+void rnaComplementary(string str) {
+    int len = str.length();
+    for (int i = 0; i<len; i++) {
+        if(str[i] == 'A'){
+            str[i] = 'U';
+        }
+        else if(str[i] == 'U'){
+            str[i] = 'A';
+        }
+        else if(str[i] == 'C'){
+            str[i] = 'G';
+        }
+        else if(str[i] == 'G'){
+            str[i] = 'C';
+        }
+    }
+    for(int i =0; i<len; i++) {
+        cout << str[i];
+    }
+}
+
+int main() {
+    string str;
+    cin >> str;
+    rnaComplementary(str);
+
+}
+
+/*
+Sample input:AACGUAGGCUC
+    output  :UUGCAUCCGAG
+*/
+```
+### DNA Reversal 
+
+```php
+#include <bits/stdc++.h>
+using namespace std;
+
+void dnaReversal(string str) {
+    int len = str.length();
+    for (int i = len; i>=0; i--){
+        if(str[i] == 'A'){
+            str[i] = 'T';
+        }
+        else if(str[i] == 'T'){
+            str[i] = 'A';
+        }
+        else if(str[i] == 'C'){
+            str[i] = 'G';
+        }
+        else if(str[i] == 'G'){
+            str[i] = 'C';
+        }
+    }
+    for(int i = len; i>=0; i--) {
+        cout << str[i];
+    }
+}
+
+int main() {
+    string str;
+    cin >> str;
+    dnaReversal(str);
+
+}
+/*
+
+Sample input  : AACGTAGGCTC
+        output: GAGCCTACGTT
+*/
+
+```
+### DNA Transcription
+```c
+#include <bits/stdc++.h>
+using namespace std;
+
+void transcriptDNA(string str) {
+    int len = str.length();
+    for (int i = 0; i<len; i++) {
+                if(str[i] == 'T'){
+            str[i] = 'U';
+        }
+    }
+    for(int i =0; i<len; i++) {
+        cout << str[i];
+    }
+}
+
+int main() {
+    string str;
+    cin >> str;
+    transcriptDNA(str);
+
+}
+/*
+
+Sample input: AACGTAGGCTC
+    output  : AACGUAGGCUC
+*/
+
+
+```
+
+### Smith WaterMan Algorithm
+```py
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string ls="AGCT", rs="ATGCT";
+    //cin >> ls >> rs;
+
+    int row, col;
+    row = ls.length()+1;
+    col = rs.length()+1;
+
+    int data[row][col];
+
+    for (int i = 0; i<row; i++) {
+        for (int j = 0; j<col; j++) {
+            data[i][j] = 0;
+        }
+    }
+    int match = 1 ,misMatch = -1,gap = -2;
+    int lef_adj = 0, up_adj = 0, dia_adj = 0;
+
+    for (int i = 1; i<row; i++) {
+        for (int j = 1; j<col; j++) {
+            lef_adj = data[i-1][j] + gap;
+            if(lef_adj < 0) {
+                lef_adj =0;
+            }
+
+            up_adj = data[i][j-1] + gap;
+            if (up_adj < 0) {
+                up_adj = 0;
+            }
+
+            if(ls[i-1] == rs[j-1]) {
+                dia_adj = data[i-1][j-1]+match;
+            }
+            else {
+                dia_adj = data[i-1][j-1]+misMatch;
+            }
+
+            data[i][j] = max(lef_adj, up_adj);
+            data[i][j] = max(data[i][j], dia_adj);
+        }
+    }
+
+     for (int i = 0; i<row; i++) {
+        for (int j = 0; j<col; j++) {
+            cout << data[i][j] << " ";
+        }
+
+        cout << "\n";
+    }
+    return 0;
+}
+
+```
+
+## Needleman Algorithm
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string ls="AGCT", rs="ATGCT";
+
+    int row, col;
+    row = ls.length()+1;
+    col = rs.length()+1;
+
+    int data[row][col];
+
+    for (int i = 0; i<row; i++) {
+        for (int j = 0; j<col; j++) {
+            data[i][j] = 0;
+        }
+    }
+
+    for (int i = 0; i<1; i++) {
+        for (int j = 1; j<col; j++) {
+            data[i][j] = -j*2;
+        }
+    }
+    for (int i = 0; i<row; i++) {
+        for (int j = 0; j<1; j++) {
+            data[i][j] = -i*2;
+        }
+    }
+
+
+     for (int i = 0; i<row; i++) {
+        for (int j = 0; j<col; j++) {
+            cout << data[i][j] << " " ;
+        }
+        cout << endl;
+    }
+
+
+    int match = 1 ,misMatch = -1,gap = -2, lef_adj = 0, up_adj = 0, dia_adj = 0;
+
+    for (int i = 1; i<row; i++) {
+        for (int j = 1; j<col; j++) {
+
+            lef_adj = data[i-1][j] + gap;
+
+            up_adj = data[i][j-1] + gap;
+
+            if(ls[i-1] == rs[j-1]) {
+                 dia_adj = data[i-1][j-1]+match;
+            }
+            else {
+                dia_adj = data[i-1][j-1]+misMatch;
+            }
+
+            data[i][j] = max(lef_adj, up_adj);
+            data[i][j] = max(data[i][j], dia_adj);
+        }
+    }
+
+
+    cout << endl;
+
+     for (int i = 0; i<row; i++) {
+        for (int j = 0; j<col; j++) {
+            cout << data[i][j] << " ";
+        }
+
+        cout << "\n";
+    }
+
+
+    return 0;
+}
+
+```
+## Edit Distance
+```c
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(void) {
+
+    string str1,str2;
+    int row,col;
+
+    cin >> str1>> str2;
+
+    row = str1.length()+1;
+    col = str2.length()+1;
+    int data[row][col];
+
+    for(int i=0; i<row; i++){
+        data[i][0] = i;
+    }
+
+    for( int j=0; j<col; j++){
+        data[0][j] = j;
+    }
+
+    int up_adj, lft_adj, dig_adj;
+
+    for( int i=1; i<row; i++)
+    {
+        for(int j=1; j<col; j++)
+        {
+            lft_adj = data[i-1][j] ;
+            up_adj = data[i][j-1];
+            dig_adj = data[i-1][j-1];
+
+            if(str1[i-1] == str2[j-1])
+            {
+                data[i][j]= dig_adj;
+            }
+            else
+            {
+                data[i][j] = min(lft_adj+1 ,up_adj+1 );
+                data[i][j] = min(data[i][j], dig_adj+1 );
+            }
+        }
+    }
+
+    for(int i = 0; i<row; i++) {
+        for(int j = 0; j<col; j++) {
+            cout << data[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -123,61 +476,17 @@ This section should list any major frameworks/libraries used to bootstrap your p
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   git clone https://github.com/mamutalib/Bio-informatics.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -211,9 +520,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Md. Abdul Mutalib - [Twitter](https://twitter.com/mamutalibcse) - mutalibcse@yahoo.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/mamutalib/Bio-informatics](https://github.com/mamutalib/Bio-informatics)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,18 +548,18 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/mamutalib/Bio-informatics.svg?style=for-the-badge
+[contributors-url]: https://github.com/mamutalib/Bio-informatics/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mamutalib/Bio-informatics.svg?style=for-the-badge
+[forks-url]: https://github.com/mamutalib/Bio-informatics/network/members
+[stars-shield]: https://img.shields.io/github/stars/mamutalib/Bio-informatics.svg?style=for-the-badge
+[stars-url]: https://github.com/mamutalib/Bio-informatics/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mamutalib/Bio-informatics.svg?style=for-the-badge
+[issues-url]: https://github.com/mamutalib/Bio-informatics/issues
+[license-shield]: https://img.shields.io/github/license/mamutalib/Bio-informatics.svg?style=for-the-badge
+[license-url]: https://github.com/mamutalib/Bio-informatics/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/Md-Abdul-Mutalib
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
