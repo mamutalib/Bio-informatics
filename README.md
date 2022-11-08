@@ -36,9 +36,9 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
+<details align="center">
+  <summary><h3 >Table of Contents</h3></summary>
+  <ol align="center">
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
