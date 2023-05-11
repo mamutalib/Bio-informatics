@@ -38,22 +38,29 @@
 <!-- TABLE OF CONTENTS -->
 <details align="center">
   <summary><h3 >Table of Contents</h3></summary>
-  <ol align="center">
+  <ol align="left">
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="##tutorial-question">Tutorial Question</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#set-a">Set-A</a></li>
+        <li><a href="#set-b">Set-B</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#bio-informatics-lab">Bio-Informatics Lab</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#dna-counting">DNA Counting</a></li>
+        <li><a href="#dna-complementary">DNA complementary</a></li>
+        <li><a href="#rna-complementary">RNA complementary</a></li>
+        <li><a href="#dna-reversal">DNA Reversal</a></li>
+        <li><a href="#dna-transcription">DNA Transcription</a></li>
+        <li><a href="#smith-waterman-algorithm">Smith WaterMan Algorithm</a></li>
+        <li><a href="#needleman-algorithm">Beedleman Algorithm</a></li>
+        <li><a href="#edit-distance">Edit Distance</a></li>
+        <li><a href="#edit-distance">Edit Distance</a></li>
+        <li><a href="#partial-digest-problem">Partial Digest Problem</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -64,10 +71,6 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://mamutalib.github.io/Bio-informatics)
-
 ## Tutorial Question
 #### Set-A
 > <img src="images/TT1-Set-A.jpg" alt="SET-A" title="Bioinformatics Tutorial-1 set A" />
@@ -742,17 +745,20 @@ main()
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a `local copy` up and running, follow these simple steps:
+
+
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_This repo doesn't rely on any external dependencies or services. You can clone the repository by running the following command in your terminal:_
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/mamutalib/Bio-informatics.git
-   ```
+1.Clone the repo
+
+```
+git clone https://github.com/mamutalib/Bio-informatics.git
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -762,16 +768,13 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Contributions to this project are greatly appreciated. If you have a suggestion that would make this project better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". **Don't forget to give the project a star**! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Create your Feature Branch (`git checkout -b feature/YourFeatureName`)
+3. Commit your Changes (`git commit -m 'Add some YourFeatureName`)
+4. Push to the Branch (`git push origin feature/YourFeatureName`)
+5. Open a `Pull Request`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -780,7 +783,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See [`LICENSE.txt`](./LICENSE.txt) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -789,7 +792,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Md. Abdul Mutalib - [Twitter](https://twitter.com/mamutalibcse) - mutalibcse@yahoo.com
+Md. Abdul Mutalib - [Twitter](https://twitter.com/m_a_mutalib) - mutalibcse@yahoo.com
 
 Project Link: [https://github.com/mamutalib/Bio-informatics](https://github.com/mamutalib/Bio-informatics)
 
@@ -800,7 +803,7 @@ Project Link: [https://github.com/mamutalib/Bio-informatics](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+I gratefully acknowledge the valuable resources and tools that have helped me in my development work. These include `open source licenses`, `cheat sheets`, `shields` and `icons`, and `platforms`. Thank you to the developers and organizations who have contributed to the development community.
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
