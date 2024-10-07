@@ -95,14 +95,14 @@ Question 1 ans
     e)false
 
 ## Bio Informatics Lab
-- [DNA Counting](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-counting)
-- [DNA Complementary](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-complementary)
-- [RNA Complementary](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#rna-complementary)
-- [DNA Reversal](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-reversal)
-- [DNA Transcription](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-transcription)
-- [Smith Waterman Algorithm](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#dna-transcription)
-- [Needleman Algorithm](https://mamutalib.github.io/neub/Dual%20semester%204-1/Bio-informatics/Lecture/#needleman-algorithm)
-- [Edit Distance](https://mamutalib.github.io/neub/9thSemester-Dual/Bio-informatics/Lecture/#edit-distance)
+- [DNA Counting](https://mamutalib.github.io/Bio-informatics/#dna-counting)
+- [DNA Complementary](https://mamutalib.github.io/Bio-informatics/#dna-complementary)
+- [RNA Complementary](https://mamutalib.github.io/Bio-informatics/#rna-complementary)
+- [DNA Reversal](https://mamutalib.github.io/Bio-informatics/#dna-reversal)
+- [DNA Transcription](https://mamutalib.github.io/Bio-informatics/#dna-transcription)
+- [Smith Waterman Algorithm](https://mamutalib.github.io/Bio-informatics/#dna-transcription)
+- [Needleman Algorithm](https://mamutalib.github.io/Bio-informatics/#needleman-algorithm)
+- [Edit Distance](https://mamutalib.github.io/Bio-informatics/#edit-distance)
 
 ### DNA Counting
 ```py
